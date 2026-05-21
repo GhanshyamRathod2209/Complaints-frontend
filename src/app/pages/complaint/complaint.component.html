@@ -1,0 +1,46 @@
+<div class="container">
+
+  <h2>Complaint Management System</h2>
+
+  <div class="form-section">
+
+    <input
+      type="text"
+      placeholder="Enter Title"
+      [(ngModel)]="complaintData.title"
+    />
+
+    <textarea
+      placeholder="Enter Description"
+      [(ngModel)]="complaintData.description">
+    </textarea>
+
+    <select [(ngModel)]="complaintData.priority">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <button (click)="addComplaint()">
+      Add Complaint
+    </button>
+
+  </div>
+
+  <hr />
+
+  <h3>Complaint List</h3>
+
+  <div class="card" *ngFor="let complaint of complaints">
+
+    <h4>{{ complaint.title }}</h4>
+
+    <p>{{ complaint.description }}</p>
+
+    <p>Status: {{ complaint.status }}</p>
+
+    <p>Priority: {{ complaint.priority }}</p>
+
+  </div>
+
+</div>
