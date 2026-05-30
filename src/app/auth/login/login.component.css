@@ -1,0 +1,111 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+.login-page{
+  display:flex;
+  height:100vh;
+}
+
+/* Left Side */
+.left-section{
+  flex:1;
+  background:linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+}
+
+.overlay{
+  text-align:center;
+  padding:30px;
+}
+
+.overlay h1{
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+.overlay p{
+  font-size:1.2rem;
+}
+
+/* Right Side */
+.right-section{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f4f7fc;
+}
+
+.login-card{
+  width:400px;
+  padding:40px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.login-card h2{
+  text-align:center;
+  color:#1e3a8a;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:30px;
+}
+
+.input-group{
+  margin-bottom:20px;
+}
+
+.input-group label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+.input-group input{
+  width:100%;
+  padding:12px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  outline:none;
+  transition:0.3s;
+}
+
+.input-group input:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 5px rgba(37,99,235,0.4);
+}
+
+.login-btn{
+  width:100%;
+  padding:14px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.login-btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}

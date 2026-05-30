@@ -1,29 +1,49 @@
-<div class="login-container">
-  <h2>Login</h2>
+<div class="login-page">
 
-  <form (ngSubmit)="onLogin()">
-
-    <div>
-      <label>Email</label>
-      <input
-        type="email"
-        [(ngModel)]="loginData.email"
-        name="email"
-        required>
+  <div class="left-section">
+    <div class="overlay">
+      <h1>Complaint Management System</h1>
+      <p>
+        Raise, Track and Resolve Complaints Efficiently
+      </p>
     </div>
+  </div>
 
-    <div>
-      <label>Password</label>
-      <input
-        type="password"
-        [(ngModel)]="loginData.password"
-        name="password"
-        required>
+  <div class="right-section">
+    <div class="login-card">
+
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Sign in to continue</p>
+
+      <form (ngSubmit)="onLogin()">
+
+        <div class="input-group">
+          <label>Email</label>
+          <input
+            type="email"
+            [(ngModel)]="loginData.email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input
+            type="password"
+            [(ngModel)]="loginData.password"
+            name="password"
+            placeholder="Enter your password"
+            required>
+        </div>
+
+        <button type="submit" class="login-btn">
+          Login
+        </button>
+
+      </form>
+
     </div>
+  </div>
 
-    <button type="submit">
-      Login
-    </button>
-
-  </form>
 </div>
