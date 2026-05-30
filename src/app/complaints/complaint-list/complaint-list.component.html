@@ -1,0 +1,29 @@
+<h2>Complaint List</h2>
+
+<table border="1" cellpadding="10">
+
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Priority</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let complaint of complaints">
+
+      <td>{{ complaint.id }}</td>
+      <td>{{ complaint.title }}</td>
+      <td>{{ complaint.description }}</td>
+      <td>{{ complaint.status }}</td>
+      <td>{{ complaint.priority }}</td>
+
+    </tr>
+
+  </tbody>
+
+</table>
